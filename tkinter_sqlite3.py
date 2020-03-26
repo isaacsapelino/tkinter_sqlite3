@@ -26,7 +26,7 @@ def update_withdraw(name, groupno, section, num1, id):
     conn.close()
 
 def update_deposit(name, groupno, section, num1, id):
-    db = 'SELECT quantity FROM items WHERE name=?'
+    db = 'SELECT quantity FROM items WHERE item_name=?'
 
     conn = sqlite3.connect("User_Database.db")
     cursor = conn.cursor()
